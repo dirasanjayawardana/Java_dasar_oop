@@ -2,7 +2,7 @@
   * class adalah bluprint/cetakan/prototype untuk membuat object
   * nama class di java harus sama dengan nama file
   * OOP merupakan cara pandang (paradigma) dalam pemrograman yang berbasi object
-  * this digunakan untuk mengakses/merepresentasikan field/atribut atau method yang ada di object saat ini (di scope terluar class)
+  * "this" digunakan untuk mengakses/merepresentasikan field/atribut atau method yang ada di object saat ini (di scope terluar class)
   */
 
  class Person {
