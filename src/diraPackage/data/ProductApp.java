@@ -8,6 +8,7 @@ public class ProductApp {
         System.out.println(product1.price); // bisa mengakses name dan price karena berada di package yang sama karena bertipe protected
         System.out.println(product1); // akan memanggil method .toString()
         System.out.println(product1.equals(product2));
+        System.out.println(product1.hashCode() == product2.hashCode());
 
         var getterSetter = new GetterSetter();
         getterSetter.setId("123");

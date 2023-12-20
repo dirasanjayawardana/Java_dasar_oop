@@ -25,4 +25,38 @@ public class Product {
         return "Product name:" + name + ", Price: " + price;
     }
 
+    /**
+     * method equals digunakan untuk membandingkan object
+     * sangat disarankan untuk ovrride method equals()
+     */
+    public boolean equals(Object item){
+        if (item == this) {
+            return true;
+        }
+        if (!(item instanceof Product)) {
+            return false;
+        }
+        Product product = (Product) item;
+
+        if(this.price != product.price) {
+            return false;
+        }
+        if(this.name != null){
+            return this.name.equals(product.name);
+        } else{
+            return product.name == null;
+        }
+    }
+
+    /**
+     * method hashCode() mirip seperti toString()
+     * bedanya hashcode() adalah representasi dalam bentuk integer, bukan string seperti toString()
+     */
+    public int hashCode(){
+        int result = name != null ? name.hashCode() : 0;
+
+        result = 31 * result + price;
+
+        return result;
+    }
 }
