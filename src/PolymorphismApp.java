@@ -1,5 +1,8 @@
 /**
  * polimorphisme --> sebuah objek bisa berubah bentuk
+ * polymorphsm --> method dengan nama yang sama dengan parameter berbeda, bisa jumlah parameternya, atau tipe data parameternya
+ * polymorphsm overload --> di dalam class yang sama bisa diduplicate dengan parameter yang berbeda
+ * polymorphsm override --> method dengan nama sama tapi dari class parent
  * instanceof --> untuk melakukan pengecekan tipe data (hasilnya true atau false)
  */
 

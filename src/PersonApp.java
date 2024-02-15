@@ -1,3 +1,6 @@
+// static --> attribute atau method dipanggil dari class
+// non-static --> attribute atau method dipanggil dari object
+
 public class PersonApp {
     public static void main(String[] srgs){
         //------ cara membuat object person dari class Person ------//

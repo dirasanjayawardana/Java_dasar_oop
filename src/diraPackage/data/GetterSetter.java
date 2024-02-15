@@ -1,6 +1,6 @@
 package diraPackage.data;
 
-// dijava script biasanya field dibuat privare, sehinnga untuk mengakses field dari file lain bisa melalui public class
+// dijava script biasanya field dibuat private, sehinnga untuk mengakses field dari file lain bisa melalui public class (methodnya)
 public class GetterSetter {
     private String id;
     private boolean isExpensive;

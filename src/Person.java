@@ -5,6 +5,11 @@
   * "this" digunakan untuk mengakses/merepresentasikan field/atribut atau method yang ada di object saat ini (di scope terluar class)
   */
 
+// polymorphsm --> method dengan nama yang sama dengan parameter berbeda, bisa jumlah parameternya, atau tipe data parameternya
+// polymorphsm overload --> di dalam class yang sama bisa diduplicate dengan parameter yang berbeda
+// polymorphsm override --> method dengan nama sama tapi dari class parent
+
+
  class Person {
      //------ menambahkan field/atribut dalam class ------//
      String name;
