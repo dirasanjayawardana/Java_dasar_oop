@@ -13,11 +13,11 @@ public class GetterSetter {
         this.id = id;
     }
 
-    public boolean isExpensive(){
+    public boolean getExpensive(){
         return isExpensive;
     }
 
-    public void isExpensive(boolean expensive) {
+    public void setExpensive(boolean expensive) {
         this.isExpensive = expensive;
     }
 }

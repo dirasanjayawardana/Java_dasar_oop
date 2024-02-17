@@ -13,6 +13,6 @@ public class ProductApp {
         var getterSetter = new GetterSetter();
         getterSetter.setId("123");
         System.out.println(getterSetter.getId());
-        System.out.println(getterSetter.isExpensive());
+        System.out.println(getterSetter.getExpensive());
     }
 }
