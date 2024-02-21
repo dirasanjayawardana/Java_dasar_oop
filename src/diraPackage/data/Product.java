@@ -5,6 +5,10 @@
  * private --> hanya bisa diakses di dalam class
  */
 
+// final class --> class yang tidak bisa diwariskan lagi --> final class NamaClass
+// final method --> mehtod yang tidak bisa dioverride lagi
+// final variabel --> nilai variabel tidak bisa diubah lagi
+
 package diraPackage.data;
 
 public class Product {
