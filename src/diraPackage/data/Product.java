@@ -15,17 +15,27 @@ public class Product {
     public String name;
     public int price;
 
-    public Product(String name, int price){
+    public Product(String name, int price) {
         this.name = name;
         this.price = price;
     }
 
+    // ------ contoh static blok ------//
+    public static final String CONTOHSTATICBLOCK;
+    // static blok hanya akan dieksekusi sekali sebelum class diload
+    // static blok hanya boleh mengakses static variabel atau static method
+    static {
+        CONTOHSTATICBLOCK = "contoh variabel dalam static block";
+    }
+
     /**
-     * secara default ketika melakukan print object dari class akan menampilkan hasil dari method .tostring()
+     * secara default ketika melakukan print object dari class akan menampilkan
+     * hasil dari method .tostring()
      * dengan format "nama" + "@" + "Hash code"
-     * sehinnga method toString() bisa di override supaya hasil print lebih mudah dibaca
+     * sehinnga method toString() bisa di override supaya hasil print lebih mudah
+     * dibaca
      */
-    public String toString(){
+    public String toString() {
         return "Product name:" + name + ", Price: " + price;
     }
 
@@ -33,7 +43,7 @@ public class Product {
      * method equals digunakan untuk membandingkan object
      * sangat disarankan untuk ovrride method equals()
      */
-    public boolean equals(Object item){
+    public boolean equals(Object item) {
         if (item == this) {
             return true;
         }
@@ -42,21 +52,22 @@ public class Product {
         }
         Product product = (Product) item;
 
-        if(this.price != product.price) {
+        if (this.price != product.price) {
             return false;
         }
-        if(this.name != null){
+        if (this.name != null) {
             return this.name.equals(product.name);
-        } else{
+        } else {
             return product.name == null;
         }
     }
 
     /**
      * method hashCode() mirip seperti toString()
-     * bedanya hashcode() adalah representasi dalam bentuk integer, bukan string seperti toString()
+     * bedanya hashcode() adalah representasi dalam bentuk integer, bukan string
+     * seperti toString()
      */
-    public int hashCode(){
+    public int hashCode() {
         int result = name != null ? name.hashCode() : 0;
 
         result = 31 * result + price;

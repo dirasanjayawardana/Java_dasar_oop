@@ -1,4 +1,7 @@
-package diraPackage.data;
+package diraPackage.application;
+
+import diraPackage.data.Avanza;
+import diraPackage.data.InterfaceCar;
 
 public class InterfaceApp {
     public static void main(String[] args) {

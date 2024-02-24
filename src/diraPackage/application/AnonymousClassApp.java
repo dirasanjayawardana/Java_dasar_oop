@@ -1,6 +1,9 @@
+package diraPackage.application;
 // anonymous class --> membuat class sekaligus membuat onbjectnya
 // cocok untuk membuat class yang sederhana dengan interface tertentu
 // kekurangannya tidak bisa reusable
+
+import diraPackage.data.AnonymousClass;
 
 public class AnonymousClassApp {
     public static void main(String[] args) {

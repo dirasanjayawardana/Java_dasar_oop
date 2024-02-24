@@ -12,9 +12,14 @@
 // parameter yang berbeda
 // polymorphsm override --> method dengan nama sama tapi dari class parent
 
-// final class --> class yang tidak bisa diwariskan lagi --> final class NamaClass
+// final class --> class yang tidak bisa diwariskan lagi --> final class
+// NamaClass
 // final method --> mehtod yang tidak bisa dioverride lagi
 // final variabel --> nilai variabel tidak bisa diubah lagi
+
+// static --> property/field, method, innerClass, dan static blok dari suatu
+// class bisa diakses secara langsung tanpa harus membuat objectnya, cara
+// mengaksesnya --> namaClass.namaProperty
 
 class Person {
     // ------ menambahkan field/atribut dalam class ------//
@@ -50,5 +55,13 @@ class Person {
     // ------ menambahkan method dalam class ------//
     void sayHello(String name) {
         System.out.println("Hello " + name + ", My name is " + this.name);
+    }
+
+    // ------ contoh static blok ------//
+    public static final String CONTOHSTATICBLOCK;
+    // static blok hanya akan dieksekusi sekali sebelum class diload
+    // static blok hanya boleh mengakses static variabel atau static method
+    static {
+        CONTOHSTATICBLOCK = "contoh variabel dalam static block";
     }
 }
