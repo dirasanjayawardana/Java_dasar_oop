@@ -17,5 +17,13 @@ public class ValidationApp {
         } finally {
             System.out.println("execute finnaly block");
         }
+
+        // contoh runTime exception (tidak wajib menggunakan try catch, namun jika terjadi error maka aplikasi akan mati)
+        ValidationUtil.validateRuntime("dira");
+        System.out.println("sukses melewati runtime exception");
+
+        // contoh error exception (jika terjadi error maka akan langsung mematikan aplikasi, tidak disarankan menggunakan try catch)
+        ValidationUtil.validateError("dira");
+        System.out.println("sukses melewati error exception");
     }
 }

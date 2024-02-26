@@ -1,4 +1,5 @@
 // membuat exception class custom (extends dari class Throwable)
+// salah datu jenis checked exception (exception yang harus menggunakan try catch dalam penggunaannya)
 
 package diraPackage.error;
 
