@@ -1,5 +1,8 @@
 package standardClass;
 
+import java.math.BigDecimal;
+import java.math.BigInteger;
+
 public class NumberClassApp {
     public static void main(String[] args) {
 
@@ -21,5 +24,12 @@ public class NumberClassApp {
         Integer integerNonPrimitif = Integer.valueOf(contohString);
         int integerPrimitif = Integer.valueOf(contohString);
         System.out.println(integerPrimitif);
+
+        // BigNumber untuk menghandle angka yang besar, melebihi kapasitas Long dan Double
+        // BigInteger (untuk nilai integer yang besar) dan BigDecimal (untuk nilai decimal yang besar)
+        // untuk melakukan operasi matematika, bisa menggunakan method --> add (+), subtract (-), multiply (*), devide (/), mod (%), dll
+        BigInteger nilaiIntegerBesar = new BigInteger("1000000000000000000");
+        BigInteger nilaiIntegerBesar2 = new BigInteger("100000000");
+        System.out.println(nilaiIntegerBesar.add(nilaiIntegerBesar2));
     }
 }
